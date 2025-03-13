@@ -1,0 +1,15 @@
+.tasks {
+  width: 60%;
+  display: flex;
+  background-color: whitesmoke;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 20%);
+  height: 500px;
+}
+
+.tasks__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 100%;
+} 
