@@ -9,7 +9,7 @@ interface Task {
 
 interface TasksBoxProps {
   tasks: Task[];
-  onDeleteTask: (id: number, ) => void;
+  onDeleteTask: (id: number) => void;
 }
 
 function TasksBox({ tasks, onDeleteTask }: TasksBoxProps) {
@@ -17,7 +17,7 @@ function TasksBox({ tasks, onDeleteTask }: TasksBoxProps) {
     <div className="tasks">
       <div className="tasks__content">
         {tasks.map((task) => (
-          <TaskItem key={task.id} task={task} onDeleteTask={onDeleteTask}/>
+          <TaskItem key={task.id} task={task} onDeleteTask={onDeleteTask} />
         ))}
       </div>
     </div>
